@@ -1,0 +1,29 @@
+.header-input {
+  appearance: none;
+  width: 35px;
+  height: 20px;
+  border: 2px solid rgb(36, 9, 158);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.header-input::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(38, 240, 11);
+}
+.header-input:checked {
+  justify-content: flex-end;
+}
+.header-input:checked::after {
+  background-color: blue;
+}
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
