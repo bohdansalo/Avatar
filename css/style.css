@@ -14,13 +14,13 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: rgb(38, 240, 11);
+  background-color: rgb(0, 0, 0);
 }
 .header-input:checked {
   justify-content: flex-end;
 }
 .header-input:checked::after {
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
 }
 label {
   display: flex;
