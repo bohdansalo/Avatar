@@ -1,0 +1,124 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --second-family: "HeadlandOne", sans-serif;
+  --third-family: "Hammersmith One", sans-serif;
+}
+:root {
+  --colorTextPriary: #141414;
+  --colorTextLink: #ffffff;
+  --colorBotton: #26c6ea;
+  --colorTextQuotes: #0a3853;
+  --colorHover: #94cfff;
+  --colorName: #000000;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+/* ============header======== */
+.header-input {
+  appearance: none;
+  width: 35px;
+  height: 20px;
+  border: 2px solid rgb(36, 9, 158);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+.header-input::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+}
+.header-input:checked {
+  justify-content: flex-end;
+}
+.header-input:checked::after {
+  background-color: rgb(0, 0, 0);
+}
+.header-switcher {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header-label {
+  font-family: var(--third-family);
+}
+.nav-link:hover {
+  font-weight: 600;
+  color: var(--colorHover);
+}
+.nav-link {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--colorTextLink);
+}
+.action-link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  text-align: justify;
+  color: var(--colorHover);
+}
+/* ===========main========= */
+.hero-text {
+  font-family: var(--font-family);
+  font-size: 20px;
+}
+.hero-link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--colorHover);
+  text-decoration: none;
+}
+.quotes-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  text-align: justify;
+  color: var(--colorTextQuotes);
+}
+.quotes-text {
+  font-family: var(--font-family);
+  color: var(--colorName);
+  font-weight: 400;
+  text-align: center;
+  color: var(--colorName);
+}
+.quotes-texts {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--colorTextPriary);
+}
+.quotes-titles {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: justify;
+  color: var(--colorName);
+}
+/* ===========footer========= */
+.email-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  color: var(--colorTextLink);
+}
+.email {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: justify;
+  color: var(--colorTextLink);
+}
