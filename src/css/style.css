@@ -10,6 +10,8 @@
   --colorTextQuotes: #0a3853;
   --colorHover: #94cfff;
   --colorName: #000000;
+  --colorTextButton: #0b0e66;
+  --colorTextBorderButton: #26c7ea;
 }
 body {
   font-family: "Inter", sans-serif;
@@ -17,6 +19,53 @@ body {
   font-weight: 400;
 }
 /* ============header======== */
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(206, 39%, 27%, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url(../images/background-header.jpg);
+  padding-top: 40px;
+  border-bottom: solid 3px var(--);
+  display: flex;
+  background-size: cover;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.header-logo {
+  width: 250px;
+  height: 150px;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.action-link {
+  font-size: 20px;
+  font-family: var(--second-family);
+  background-color: var(--colorTextButton);
+  border: var(--colorTextBorderButton) solid 2px;
+  padding: 10px 40px;
+  border-radius: 35px 0px 35px 0px;
+  color: var(--colorBotton);
+}
 .header-input {
   appearance: none;
   width: 35px;
@@ -46,7 +95,7 @@ body {
   align-items: center;
   gap: 5px;
 }
-.header-label {
+.header-switcher {
   font-family: var(--third-family);
 }
 .nav-link:hover {
@@ -66,9 +115,43 @@ body {
   color: var(--colorHover);
 }
 /* ===========main========= */
+.hero {
+  height: 1040px;
+  background-image: url(../images/photo-jake.png);
+  background-size: cover;
+  display: flex;
+}
+.container-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-content {
+  max-width: 376px;
+}
+.hero-link {
+  font-size: 20px;
+  font-family: var(--second-family);
+  background-color: var(--colorTextButton);
+  border: var(--colorTextBorderButton) solid 2px;
+  padding: 10px 40px;
+  border-radius: 35px 0px 35px 0px;
+  color: var(--colorBotton);
+}
+.social-list {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  max-width: 50px;
+  max-height: 141px;
+}
+.social-item {
+  align-items: center;
+}
 .hero-text {
   font-family: var(--font-family);
-  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 .hero-link {
   font-family: var(--second-family);
@@ -76,7 +159,6 @@ body {
   font-size: 24px;
   text-align: center;
   color: var(--colorHover);
-  text-decoration: none;
 }
 .quotes-title {
   font-family: var(--font-family);
