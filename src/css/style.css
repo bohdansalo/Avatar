@@ -17,7 +17,6 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  color: var(--colorTextLink);
 }
 /* ============header======== */
 .container {
@@ -191,7 +190,7 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 36px;
-  text-align: justify;
+  text-align: center;
   color: var(--colorTextQuotes);
   padding-top: 80px;
   padding-bottom: 30px;
@@ -307,6 +306,7 @@ body {
   margin-bottom: 120px;
 }
 /* ===========footer========= */
+
 .footer {
   background-image: linear-gradient(
       to right bottom,
@@ -318,28 +318,36 @@ body {
   border-bottom: solid 3px var(--);
   display: flex;
   background-size: cover;
-  justify-content: space-between;
-  align-items: center;
 }
 .container-footer {
   padding-top: 40px;
-  display: flex;
   padding-bottom: 40px;
-  align-items: center;
+  display: flex;
+  text-align: center;
+  gap: 25px;
 }
 .footer-logo {
+  align-items: start;
+}
+.footer-logo::after {
+  content: "";
+  width: 2px;
+  height: 153px;
+  background-color: var(--colorTextPriary);
 }
 .email-text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
-  text-align: justify;
+
+  justify-content: space-between;
   color: var(--colorTextLink);
 }
 .email {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 20px;
+  justify-content: space-between;
   text-align: justify;
   color: var(--colorTextLink);
 }
@@ -347,6 +355,9 @@ body {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
-  text-align: justify;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   color: #fff;
 }
