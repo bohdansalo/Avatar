@@ -325,69 +325,56 @@ body {
     ),
     url(../images/background/background-footer.jpg);
   background-repeat: no-repeat;
-  border-bottom: solid 3px var(--);
-  display: flex;
   background-size: cover;
+  padding-top: 35px;
+  padding-bottom: 25px;
 }
 .container-footer {
-  max-width: 1440px;
-  max-height: 223px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   display: flex;
   text-align: center;
-  gap: 25px;
+  gap: 80px;
 }
 .footer-content {
+  flex-grow: 1;
+}
+.footer-support {
   display: flex;
-  padding-top: 75px;
+  justify-content: space-between;
+  margin-bottom: 35px;
 }
-.footer-logo {
-  padding-right: 160px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+.footer-information,
+.email-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.footer-logo::after {
+.footer-info {
+  display: flex;
+  gap: 80px;
+}
+.footer-info::after {
   content: "";
   width: 2px;
   height: 153px;
-  text-align: center;
-  background-color: var(--colorTextPriary);
+  background-color: var(--colorTextLink);
 }
-
 .email-text {
-  font-family: var(--font-family);
+  font-family: var(--font-family-);
   font-weight: 400;
   font-size: 20px;
-  text-align: center;
-  text-align: justify;
   white-space: nowrap;
   color: var(--colorTextLink);
-}
-.email-info {
 }
 .email {
   font-family: var(--font-family);
   font-size: 20px;
-  padding-left: 309px;
-  text-align: center;
-  text-align: justify;
   white-space: nowrap;
   color: var(--colorTextLink);
-}
-.footer-text-info {
-  display: flex;
-  text-align: center;
-  justify-content: center;
 }
 .footer-text {
   font-family: var(--font-family);
   font-size: 14px;
-  display: block;
-  padding-top: 50px;
-  padding-right: 378px;
-  justify-content: center;
   white-space: nowrap;
-  gap: 25px;
   color: #fff;
+  text-align: center;
 }
