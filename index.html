@@ -16,11 +16,14 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <img
-          class="header-logo"
-          src="./src/images/decoration/logo.svg"
-          alt="logo"
-        />
+        <a href="./index.html">
+          <img
+            class="header-logo"
+            src="./src/images/decoration/logo.svg"
+            alt="logo"
+          />
+        </a>
+
         <nav class="header-nav">
           <ul class="nav-list">
             <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
@@ -30,12 +33,13 @@
         </nav>
         <div class="header-action">
           <a class="action-link" href="#">Увійти</a>
+
+          <label class="header-switcher">
+            <p class="switcher-text">ENG</p>
+            <input class="header-input" type="checkbox" />
+            <p class="switcher-text">UA</p>
+          </label>
         </div>
-        <label class="header-switcher">
-          ENG
-          <input class="header-input" type="checkbox" />
-          UA
-        </label>
       </div>
     </header>
     <main class="main">
@@ -50,7 +54,9 @@
               Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
               залишається, щоб стати частиною Народу. Борись разом з нами!
             </p>
-            <a class="hero-link" href="#">Приєднатися до клану</a>
+            <button class="hero-btn">
+              <a class="hero-link" href="#">Приєднатися до клану</a>
+            </button>
           </div>
 
           <ul class="social-list">

@@ -32,13 +32,9 @@ body {
       rgba(43, 74, 97, 0.87)
     ),
     url(../images/background/background-header.jpg);
-  padding-top: 40px;
-  border-bottom: solid 3px var(--);
-  display: flex;
+  padding: 54px 0 54px 0;
   background-size: cover;
-  justify-content: space-between;
   background-repeat: no-repeat;
-  padding-bottom: 40px;
   align-items: center;
 }
 .header-container {
@@ -47,15 +43,15 @@ body {
   justify-content: space-between;
   flex-grow: 1;
 }
+
 .header-logo {
-  width: 250px;
-  height: 150px;
   align-items: center;
-  padding-left: 250px;
+  padding-left: 200px;
 }
 .nav-list {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 38px;
 }
 .action-link {
@@ -71,12 +67,13 @@ body {
   appearance: none;
   width: 35px;
   height: 20px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 15px;
   display: flex;
   align-items: center;
   padding-left: 3px;
   padding-right: 3px;
+  transition: 0.5s;
 }
 .header-input::after {
   content: "";
@@ -91,16 +88,26 @@ body {
 .header-input:checked::after {
   background-color: rgb(255, 255, 255);
 }
+.header-action {
+  display: flex;
+  gap: 50px;
+}
 .header-switcher {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding-right: 450px;
+  padding-right: 65px;
 }
 .header-switcher {
   font-family: var(--third-family);
+  transition: 0.5s;
+}
+.switcher-text {
+  color: var(--colorTextLink);
 }
 .nav-link:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
   font-weight: 600;
   color: var(--colorHover);
 }
@@ -132,24 +139,23 @@ body {
 }
 .hero-content {
   max-width: 376px;
-  padding-top: 180px;
-  padding-bottom: 180px;
+  margin-top: 180px;
+  margin-bottom: 180px;
 }
-.hero-link {
-  font-size: 20px;
-  font-family: var(--second-family);
-  background-color: var(--colorTextButton);
-  border: var(--colorTextBorderButton) solid 2px;
-  padding: 10px 40px;
+.hero-btn {
+  padding: 10px 30px;
+  width: 260px;
   border-radius: 35px 0px 35px 0px;
+  background-color: var(--colorTextButton);
+  font-family: var(--second-family);
   color: var(--colorBotton);
+  border: var(--colorTextBorderButton) solid 2px;
 }
+
 .social-list {
   display: flex;
   gap: 25px;
   flex-direction: column;
-  max-width: 50px;
-  max-height: 141px;
 }
 .social-item {
   align-items: center;
@@ -191,7 +197,7 @@ body {
   font-family: var(--second-family);
   background-color: var(--colorTextButton);
   border: var(--colorTextBorderButton) solid 2px;
-  padding: 10px 40px;
+  padding: 20px 25px;
   border-radius: 35px 0px 35px 0px;
 
   color: var(--colorBotton);
@@ -269,7 +275,6 @@ body {
   flex-wrap: wrap;
 }
 .navi-item {
-  background-color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
 .navi-item:nth-child(1) {
@@ -311,6 +316,7 @@ body {
   padding-bottom: 36px;
   width: 320px;
   gap: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .navi-texts {
   margin-bottom: 120px;
@@ -366,10 +372,28 @@ body {
   color: var(--colorTextLink);
 }
 .email {
+  position: relative;
   font-family: var(--font-family);
   font-size: 20px;
   white-space: nowrap;
   color: var(--colorTextLink);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.6);
+  }
+}
+.email-info .email:nth-child(1)::before {
+  width: 269px;
+  left: -269px;
+}
+
+.email-info .email:nth-child(2)::before {
+  width: 212px;
+  left: -229px;
 }
 .footer-text {
   font-family: var(--font-family);
